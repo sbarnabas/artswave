@@ -1,7 +1,7 @@
 import {Page, NavController, Platform} from "ionic-angular";
 import {FbProvider} from "../../providers/fb-provider/fb-provider";
 import {InterestsPage} from "../../pages/interests/interests";
-import {ListPage} from "../../pages/list/list";
+import {ListPage} from "../../pages/all-events/all-events";
 
 @Page({
     templateUrl: 'build/pages/hello-ionic/hello-ionic.html'

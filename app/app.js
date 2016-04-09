@@ -3,7 +3,7 @@ import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {InterestsPage} from './pages/interests/interests';
-import {ListPage} from './pages/list/list';
+import {ListPage} from './pages/all-events/all-events';
 import {ProfilePage} from './pages/profile/profile';
 import {FbProvider} from './providers/fb-provider/fb-provider';
 
