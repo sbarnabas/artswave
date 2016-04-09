@@ -5,6 +5,29 @@
 
 <ion-content>
     <ion-list>
+        <ion-card *ngFor="#item of items" (click)="itemTapped($event, item)">
+            <img src="{{item.image}}"/>
+            <ion-card-content>
+                <ion-card-title>
+
+                    {{item.eventName}}
+                    {{item.eventImage}}
+                    {{item.eventDescription}}
+                    {{item.venueName}}
+                    {{item.eventStart}}
+                    {{item.eventEnd}}
+
+
+                </ion-card-title>
+                <p>
+
+                </p>
+
+            </ion-card-content>
+
+        </ion-card>
+
+    <!--
         <ion-item>
             <ion-avatar item-left>
               <img src="{{events.event[0].eventImage}}">
@@ -15,6 +38,7 @@
             <p>{{event.eventDateTimes.datetime.date}}</p>
             <p>Start: {{event.eventDateTimes.datetime.time}} - End: {{event.eventDateTimes.datetime.end_time}}</p>
         </ion-item>
+    -->
     </ion-list>
     <div *ngIf="selectedItem" padding>
         You navigated here from <b>{{selectedItem.title}}</b>
