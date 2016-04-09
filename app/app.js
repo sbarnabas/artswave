@@ -45,7 +45,7 @@ class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
-      console.log("here");
+      
       if (!window.cordova || window.cordova.platformId == "browser") {
         console.log("browser");
         facebookConnectPlugin.browserInit(812818618863050, version);

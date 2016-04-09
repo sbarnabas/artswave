@@ -1,20 +1,19 @@
+<ion-navbar *navbar align-title="center">
 
-<ion-navbar *navbar align-title="center" >
-
-  <ion-title>ArtsWave Connect</ion-title>
+    <ion-title>Arts360</ion-title>
 </ion-navbar>
 
 
 <ion-content padding class="getting-started">
 
-  <h3>Welcome to ArtsWave Connect!</h3>
+    <h3>Welcome to Arts360</h3>
+    <div style="width:100%;text-align: right"><h6>by ArtsWave</h6></div>"position:absolute; bottom:20px; right:20px">
+        <button primary (click)="login()">Login With Facebook</button>
+        <button clear (click)=goToInterests()>Continue Anonymously</button>
+    </div>
+    <img style="position: absolute;width: 400px;"src="http://www.theartswave.org/docs/default-source/default-document-library/artswave_brandmark_with_tagline-(1).jpg?sfvrsn=2">
 
-  <p>
-    <button primary (click)="login()">Login With Facebook</button>
-  </p>
-  <p>
-    <button primary clear (click) = goToInterests()>Continue Anonymously</button>
-  </p>
-  <div id="fb-root"></div>
+
+    <div id="fb-root"></div>
 
 </ion-content>
