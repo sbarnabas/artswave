@@ -1,5 +1,6 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
 import {Http} from 'angular2/http';
+import 'rxjs/add/operator/map';
 
 @Page({
   templateUrl: 'build/pages/interests/interests.html'
@@ -14,9 +15,11 @@ export class InterestsPage {
     this.http = http;
 
     console.log("getting the interestes");
-    var interests =  this.http.get("http://localhost:3000/interests");
+   this.http.get("http://localhost:3000/interests").map(res => res.json()).subscribe(data => {
+      console.log("got the interests ",data);
+    });
 //    .then(function(response){ this.interests = response.data; });
-    console.log("got the interests " + interests.size());
+
 /*
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');

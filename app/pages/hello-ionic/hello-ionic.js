@@ -12,7 +12,7 @@ export class HelloIonicPage {
         // push another page onto the history stack
         // causing the nav controller to animate the new page in
       //check interests
-        if(false) {
+        if(true) {
             this.nav.push(InterestsPage);
         }
         else
