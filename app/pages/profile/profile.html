@@ -2,15 +2,23 @@
   <ion-title>Profile</ion-title>
 </ion-navbar>
 
+<ion-content>
+
 <ion-row>
-  <ion-col width-50><ion-icon name="person"></ion-icon></ion-col>
-  <ion-col width-50>Rich's Profile</ion-icon></ion-col>
-</ion-row>
-<ion-row>
-  <ion-col>Donate to ArtsWave</ion-col>
-</ion-row><ion-row>
-  <ion-col>Interests</ion-col>
-</ion-row>
-<ion-row>
-  <ion-col>Help</ion-col>
-</ion-row>
+	<ion-col><ion-icon name="person"></ion-icon></ion-col>
+</ion-row>  
+  
+  <p align="center">
+    <button primary >Help</button>
+  </p>
+  
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+    
+</ion-content>
+
+
+
+
+

@@ -3,12 +3,6 @@
 </ion-navbar>
 
 <ion-content>
-<!-- <ion-list>
-    <button ion-item *ngFor="#interest of interests" (click)="itemTapped($event, interest)">
-      <ion-icon name="{{interest.imageUri}}" item-left></ion-icon>
-      {{interest.name}}
-    </button>
-  </ion-list> -->
   
 <ion-row>
   <ion-col width-33 style="color: #{{interests[0].colorValue}}" align="center"><img src="{{interests[0].imageUri}}"/><ion-label>{{interests[0].name}} <ion-checkbox></ion-checkbox></ion-label></ion-col>

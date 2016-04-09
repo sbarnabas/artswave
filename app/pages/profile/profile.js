@@ -1,6 +1,4 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
-import {Http} from 'angular2/http';
-import 'rxjs/add/operator/map';
 
 @Page({
   templateUrl: 'build/pages/profile/profile.html'
@@ -8,19 +6,13 @@ import 'rxjs/add/operator/map';
 
 export class ProfilePage {
   static get parameters() {
-    return [[NavController], [NavParams], [Http]];
+    return [[NavController], [NavParams]];
   }
-  
-  saveInterests() {
-	  console.log("Saved your interests");
-  };
 
-
-  constructor(nav, navParams, http) {
-    this.nav = nav;
-    this.http = http;
-
+  constructor(nav, navParams) {
     console.log("loading profile");
+    this.nav = nav;
+
     this.userProfile = {"userName": "Your user name!", "level" : "Enthusiast", "points": "360", "interests": "", "events" : ""};
   }
 }

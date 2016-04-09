@@ -14,7 +14,7 @@ export class InterestsPage {
   
   saveInterests() {
 	  console.log("Saved your interests");
-      this.nav.push(ProfilePage);
+	  this.nav.push(ProfilePage);
   };
 
 
