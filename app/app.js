@@ -3,7 +3,7 @@ import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {InterestsPage} from './pages/interests/interests';
-import {ListPage} from './pages/all-events/all-events';
+import {AllEventsPage} from './pages/all-events/all-events';
 import {ProfilePage} from './pages/profile/profile';
 import {FbProvider} from './providers/fb-provider/fb-provider';
 
@@ -31,7 +31,7 @@ class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'ArtsWave Connect', component: HelloIonicPage },
-      { title: 'Events List', component: ListPage },
+      { title: 'All Events', component: AllEventsPage },
       { title: 'Profile', component: ProfilePage },
       { title: 'Interests', component: InterestsPage }
     ];

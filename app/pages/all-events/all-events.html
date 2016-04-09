@@ -1,15 +1,15 @@
 <ion-navbar *navbar>
 
-    <ion-title>Activities</ion-title>
+    <ion-title>All Events</ion-title>
 </ion-navbar>
 
 <ion-content>
     <ion-list>
-        <ion-item ng-repeat="event in events track by $index">
+        <ion-item>
             <ion-avatar item-left>
-              <img src=#{{event.eventImage}}>
+              <img src="{{events.event[0].eventImage}}">
             </ion-avatar>
-            <h2>{{event.eventName}}</h2>
+            <h2>{{events.eventName}}</h2>
             <p>{{event.eventDescription}}</p>
             <p>{{event.venueName}}</p>
             <p>{{event.eventDateTimes.datetime.date}}</p>
