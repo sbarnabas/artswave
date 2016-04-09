@@ -1,20 +1,35 @@
 <ion-navbar *navbar>
-  <button menuToggle>
-    <ion-icon name="menu"></ion-icon>
-  </button>
   <ion-title>I'm interested in</ion-title>
 </ion-navbar>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="#item of items" (click)="itemTapped($event, item)">
-      <ion-icon name="{{item.icon}}" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
+<!-- <ion-list>
+    <button ion-item *ngFor="#interest of interests" (click)="itemTapped($event, interest)">
+      <ion-icon name="{{interest.imageUri}}" item-left></ion-icon>
+      {{interest.name}}
     </button>
-  </ion-list>
+  </ion-list> -->
+  
+<ion-row>
+  <ion-col width-33><img src="{{interests[0].imageUri}}"/><div align="center" style="color: #{{interests[0].colorValue}}">{{interests[0].name}}</div></ion-col>
+  <ion-col width-33><img src="{{interests[1].imageUri}}"/><div align="center" style="color: #{{interests[1].colorValue}}">{{interests[1].name}}</div></ion-col>
+  <ion-col width-33><img src="{{interests[2].imageUri}}"/><div align="center" style="color: #{{interests[2].colorValue}}">{{interests[2].name}}</div></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col width-33><img src="{{interests[3].imageUri}}"/><div align="center" style="color: #{{interests[3].colorValue}}">{{interests[3].name}}</div></ion-col>
+  <ion-col width-33><img src="{{interests[4].imageUri}}"/><div align="center" style="color: #{{interests[4].colorValue}}">{{interests[4].name}}</div></ion-col>
+  <ion-col width-33><img src="{{interests[5].imageUri}}"/><div align="center" style="color: #{{interests[5].colorValue}}">{{interests[5].name}}</div></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col width-33><img src="{{interests[6].imageUri}}"/><div align="center" style="color: #{{interests[6].colorValue}}">{{interests[6].name}}</div></ion-col>
+  <ion-col width-33><img src="{{interests[7].imageUri}}"/><div align="center" style="color: #{{interests[7].colorValue}}">{{interests[7].name}}</div></ion-col>
+  <ion-col width-33><img src="{{interests[8].imageUri}}"/><div align="center" style="color: #{{interests[8].colorValue}}">{{interests[8].name}}</div></ion-col>
+</ion-row>
+  
+  <p align="center">
+    <button primary (click)="saveInterests()">Save Interests</button>
+  </p>
+  
   <div *ngIf="selectedItem" padding>
     You navigated here from <b>{{selectedItem.title}}</b>
   </div>
