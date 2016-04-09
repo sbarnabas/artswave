@@ -1,45 +1,30 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import {Page, NavController} from 'ionic-angular';
-
-=======
-import {Page, Platform} from "ionic-angular";
+import {Page, NavController, Platform} from "ionic-angular";
 import {FbProvider} from "../../providers/fb-provider/fb-provider";
->>>>>>> origin/master
-=======
-import {Page, Platform} from "ionic-angular";
-import {FbProvider} from "../../providers/fb-provider/fb-provider";
->>>>>>> origin/master
+import {InterestsPage} from "../../pages/interests/interests";
 
 @Page({
     templateUrl: 'build/pages/hello-ionic/hello-ionic.html'
 })
 export class HelloIonicPage {
-<<<<<<< HEAD
-<<<<<<< HEAD
-	  constructor(nav: NavController){
-		    this.nav = nav;
-		  }
-	  
-  goToInterests(){
-	    // push another page onto the history stack
-	    // causing the nav controller to animate the new page in
-	    this.nav.push(InterestsPage);
-	  }
-=======
-=======
->>>>>>> origin/master
-    static get parameters() {
-        return [[Platform], [FbProvider]];
+
+    goToInterests() {
+        // push another page onto the history stack
+        // causing the nav controller to animate the new page in
+        this.nav.push(InterestsPage);
     }
 
-    constructor(platform, fbProvider) {
+    static get parameters() {
+        return [[Platform], [FbProvider], [NavController]];
+    }
+
+    constructor(platform, fbProvider, nav) {
         console.log(fbProvider);
         this.platform = platform;
         this.fb = fbProvider;
         this.email = '';
         this.name = '';
         this.id = '';
+        this.nav = nav;
     };
 
     login() {
@@ -52,9 +37,4 @@ export class HelloIonicPage {
             });
         });
     };
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
-
 }

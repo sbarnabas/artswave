@@ -1,5 +1,5 @@
 import 'es6-shim';
-import {App, IonicApp, Platform, MenuController, NavController} from 'ionic-angular';
+import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {InterestsPage} from './pages/interests/interests';
@@ -16,25 +16,17 @@ import {FbProvider} from './providers/fb-provider/fb-provider';
 })
 class MyApp {
   static get parameters() {
-<<<<<<< HEAD
-    return [[IonicApp], [Platform], [MenuController], [NavController]];
-  }
-
-  constructor(app, platform, menu, nav) {
-=======
-    return [[IonicApp], [Platform],[FbProvider], [MenuController]];
+    return [[IonicApp], [Platform],[FbProvider], [MenuController] ];
   }
 
 
-  constructor(app, platform,fbprovider,menu) {
->>>>>>> origin/master
+  constructor(app, platform,fbprovider,menu,nav) {
     // set up our app
     this.app = app;
     this.platform = platform;
     this.menu = menu;
     this.initializeApp();
-    this.nav = nav;
-
+   
     // set our app's pages
     this.pages = [
       { title: 'ArtsWave Connect', component: HelloIonicPage },

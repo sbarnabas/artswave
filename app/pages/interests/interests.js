@@ -1,11 +1,14 @@
-import {Page} from 'ionic-angular';
+import {Page,NavController} from 'ionic-angular';
 
 
 @Page({
   templateUrl: 'build/pages/interests/interests.html'
 })
 export class InterestsPage {
-	  constructor(nav: NavController){
+	static get parameters() {
+		return [[NavController]];
+	}
+	  constructor(nav){
 		    this.nav = nav;
 		    
 		    // pull the list of interests from the API endpoint
