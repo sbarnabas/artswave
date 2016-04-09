@@ -4,6 +4,7 @@ import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {InterestsPage} from './pages/interests/interests';
 import {ListPage} from './pages/list/list';
+import {ProfilePage} from './pages/profile/profile';
 import {FbProvider} from './providers/fb-provider/fb-provider';
 
 
@@ -30,7 +31,8 @@ class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'ArtsWave Connect', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage },
+      { title: 'Events List', component: ListPage },
+      { title: 'Profile', component: ProfilePage },
       { title: 'Interests', component: InterestsPage }
     ];
 
