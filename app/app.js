@@ -7,7 +7,9 @@ import {ListPage} from './pages/list/list';
 
 @App({
   templateUrl: 'build/app.html',
-  config: {} // http://ionicframework.com/docs/v2/api/config/Config/
+  config: {
+    mode:'ios'
+  } // http://ionicframework.com/docs/v2/api/config/Config/
 })
 class MyApp {
   static get parameters() {
@@ -23,7 +25,7 @@ class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
+      { title: 'ArtsWave Connect', component: HelloIonicPage },
       { title: 'My First List', component: ListPage }
     ];
 
