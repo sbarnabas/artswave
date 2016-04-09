@@ -6,16 +6,22 @@
 
 <ion-row>
 	<ion-col><ion-icon name="person"></ion-icon></ion-col>
-</ion-row>  
+	<ion-col>{{userProfile.userName}} / <br/>{{userProfile.level}}</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col>Donate</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col>My Events</ion-col>
+</ion-row>
+<ion-row>
+	<ion-col>Interests</ion-col>
+</ion-row>
   
   <p align="center">
     <button primary >Help</button>
   </p>
   
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
-    
 </ion-content>
 
 
