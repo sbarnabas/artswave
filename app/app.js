@@ -3,20 +3,23 @@ import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
+import {FbProvider} from './providers/fb-provider/fb-provider';
 
 
 @App({
   templateUrl: 'build/app.html',
+  providers: [FbProvider],
   config: {
     mode:'ios'
   } // http://ionicframework.com/docs/v2/api/config/Config/
 })
 class MyApp {
   static get parameters() {
-    return [[IonicApp], [Platform], [MenuController]];
+    return [[IonicApp], [Platform],[FbProvider], [MenuController]];
   }
 
-  constructor(app, platform, menu) {
+
+  constructor(app, platform,fbprovider,menu) {
     // set up our app
     this.app = app;
     this.platform = platform;
@@ -38,6 +41,12 @@ class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
+      console.log("here");
+      if (!window.cordova || window.cordova.platformId == "browser") {
+        console.log("browser");
+        facebookConnectPlugin.browserInit(812818618863050, version);
+        // version is optional. It refers to the version of API you may want to use.
+      }
     });
   }
 
