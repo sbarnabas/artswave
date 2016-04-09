@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {Page, NavController} from 'ionic-angular';
 
+=======
+import {Page, Platform} from "ionic-angular";
+import {FbProvider} from "../../providers/fb-provider/fb-provider";
+>>>>>>> origin/master
 =======
 import {Page, Platform} from "ionic-angular";
 import {FbProvider} from "../../providers/fb-provider/fb-provider";
@@ -10,6 +15,7 @@ import {FbProvider} from "../../providers/fb-provider/fb-provider";
     templateUrl: 'build/pages/hello-ionic/hello-ionic.html'
 })
 export class HelloIonicPage {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	  constructor(nav: NavController){
 		    this.nav = nav;
@@ -21,6 +27,8 @@ export class HelloIonicPage {
 	    this.nav.push(InterestsPage);
 	  }
 =======
+=======
+>>>>>>> origin/master
     static get parameters() {
         return [[Platform], [FbProvider]];
     }
@@ -44,6 +52,9 @@ export class HelloIonicPage {
             });
         });
     };
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 
 }
