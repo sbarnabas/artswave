@@ -22,7 +22,7 @@ export class FbProvider {
                 });
 
             } else {
-                console.log("Please run me on a device");
+                console.log("Run on Device");
                 reject('Please run me on a device');
             }
         });
