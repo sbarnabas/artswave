@@ -3,25 +3,66 @@
 </ion-navbar>
 
 <ion-content>
+<!-- ion-card>
+  <ion-card-header>
+    {{userProfile.userName}}'s Profile
+  </ion-card-header>
 
-<ion-row>
-	<ion-col><ion-icon name="person"></ion-icon></ion-col>
-	<ion-col>{{userProfile.userName}} / <br/>{{userProfile.level}}</ion-col>
-</ion-row>
-<ion-row>
-	<ion-col>Donate</ion-col>
-</ion-row>
-<ion-row>
-	<ion-col>My Events</ion-col>
-</ion-row>
-<ion-row>
-	<ion-col>Interests</ion-col>
-</ion-row>
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="bowtie" item-left></ion-icon>
+      Level: {{userProfile.level}}
+    </button>
+
+    <button ion-item>
+      <ion-icon name="calendar" item-left></ion-icon>
+      My Events
+    </button>
+
+    <button ion-item>
+      <ion-icon name="done-all" item-left></ion-icon>
+      Interests
+    </button>
+
+    <button ion-item>
+      <ion-icon name="help-circle" item-left></ion-icon>
+      Help / Contact Us
+    </button>
+
+  </ion-list>
+</ion-card -->
+<ion-card>
+
+  <ion-item>
+    <ion-avatar item-left>
+      <img src="img/avatar.png">
+    </ion-avatar>
+    <h2>{{userProfile.userName}}</h2>
+    <p>{{userProfile.level}}</p>
+  </ion-item>
+
+  <ion-card-content>
+  	<p>
+     <ion-icon name="calendar"></ion-icon>
+      My Events Archive
+    </p>
+
+  	<p>
+      <ion-icon name="done-all" item-left></ion-icon>
+      Interests
+    </p>
+    
+    <p>
+      <ion-icon name="help-circle" item-left></ion-icon>
+      Help / Contact Us
+    </p>
+    
+    <p>
+    </p>
+  </ion-card-content>
   
-  <p align="center">
-    <button primary >Help</button>
-  </p>
-  
+
+</ion-card>
 </ion-content>
 
 

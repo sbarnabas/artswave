@@ -1,4 +1,4 @@
-import {Page, NavController, NavParams} from 'ionic-angular';
+import {Modal, Page, NavController, NavParams} from 'ionic-angular';
 
 @Page({
   templateUrl: 'build/pages/profile/profile.html'
@@ -13,6 +13,6 @@ export class ProfilePage {
     console.log("loading profile");
     this.nav = nav;
 
-    this.userProfile = {"userName": "Your user name!", "level" : "Enthusiast", "points": "360", "interests": "", "events" : ""};
+    this.userProfile = {"userName": "Rich", "level" : "Enthusiast", "points": "360", "interests": "", "events" : ""};
   }
 }
