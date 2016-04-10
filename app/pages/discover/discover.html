@@ -6,8 +6,9 @@
 <ion-content>
     <ion-list>
 
-        <ion-card *ngFor="#item of items">
-            <img src="{{item.eventImage}}"  (click)="itemTapped($event, item)"/>
+        <div class="container">
+        <ion-card *ngFor="#item of items" class="buddy">
+            <img src="{{item.eventImage}}"  (click)="itemTapped($event, item)" class="avatar"/>
             <ion-item (click)="itemTapped($event, item)">
                 <ion-card-content >
 
@@ -24,19 +25,19 @@
             </ion-item>
             <ion-row no-padding>
                 <ion-col  (click)="itemRemove($event, item,false)">
-                    <button clear small danger>
+                    <button clear small primary>
                         <ion-icon name='star'></ion-icon>
                         Save
                     </button>
                 </ion-col>
                 <ion-col text-center  (click)="itemTapped($event, item)">
-                    <button clear small danger>
+                    <button clear small primary>
                         <ion-icon name='more'></ion-icon>
                         More Info
                     </button>
                 </ion-col>
                 <ion-col text-right (click)="itemRemove($event, item,true)">
-                    <button clear small danger>
+                    <button clear small primary>
                         <ion-icon name='trash'></ion-icon>
                         Dismiss
                     </button>
@@ -45,6 +46,7 @@
 
 
         </ion-card>
+        </div>
 
     </ion-list>
 
