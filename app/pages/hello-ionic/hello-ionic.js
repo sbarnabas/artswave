@@ -2,6 +2,8 @@ import {Page, NavController, Platform} from "ionic-angular";
 import {FbProvider} from "../../providers/fb-provider/fb-provider";
 import {InterestsPage} from "../../pages/interests/interests";
 import {DiscoverPage} from "../../pages/discover/discover";
+import {TabsPage} from "../../pages/tabs/tabs";
+import {AllEventsPage} from "../all-events/all-events";
 
 @Page({
     templateUrl: 'build/pages/hello-ionic/hello-ionic.html'
@@ -13,11 +15,11 @@ export class HelloIonicPage {
         // causing the nav controller to animate the new page in
       //check interests
         if(false) {
-            this.nav.push(InterestsPage);
+            this.nav.push(AllEventsPage);
         }
         else
         {
-            this.nav.push(DiscoverPage);
+            this.nav.push(TabsPage);
         }
     }
 

@@ -18,6 +18,7 @@ export class DiscoverPage {
         this.selectedItem = navParams.get('item');
         this.items = [];
         this.getData();
+
         if (this.data.events && this.data.events.event) {
             try {
                 for (var idx in this.data.events.event) {
@@ -33,15 +34,20 @@ export class DiscoverPage {
                 console.log(ex);
             }
         }
+
+        this.nav.tabBadge=this.items.length;
+
     }
 
     itemRemove(event, item) {
         var idx = this.items.indexOf(item);
         if (idx > -1) {
             this.items.splice(idx, 1);
+            this.nav.tabBadge=this.items.length;
         }
         if (this.items.length == 0) {
-
+            this.nav.tabBadge=0;
+            this.nav.tabBadgeStyle="";
         }
     }
 
@@ -49,6 +55,7 @@ export class DiscoverPage {
         this.nav.push(ItemDetailsPage, {
             item: item
         });
+
     }
 
     getData() {

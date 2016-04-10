@@ -6,24 +6,27 @@
 <ion-content>
     <ion-list>
 
-        <ion-card *ngFor="#item of items" >
+        <ion-card *ngFor="#item of items">
             <img src="{{item.image}}"/>
-            <ion-card-content (click)="itemTapped($event, item)">
-                <ion-card-title>
+            <ion-item>
+                <ion-card-content (click)="itemTapped($event, item)">
 
-                    <p [innerHTML]="item.title"></p>
-                </ion-card-title>
+                    <ion-card-title>
 
-                <div [innerHTML]="item.note">
-                </div>
+                        <p [innerHTML]="item.title"></p>
+                    </ion-card-title>
+
+                    <div [innerHTML]="item.note">
+                    </div>
 
 
-            </ion-card-content>
+                </ion-card-content>
+            </ion-item>
             <ion-row no-padding>
                 <ion-col>
                     <button clear small danger>
                         <ion-icon name='star'></ion-icon>
-                        Favorite
+                        Save
                     </button>
                 </ion-col>
                 <ion-col text-center>
