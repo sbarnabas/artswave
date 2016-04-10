@@ -11,6 +11,6 @@ export class TabsPage {
     constructor() {
         this.tab1 = DiscoverPage;
         this.tab2 = AllEventsPage;
-        this.tab3=DiscoverPage;
+        this.tab3=AllEventsPage;
     }
 }

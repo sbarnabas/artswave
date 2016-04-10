@@ -2,7 +2,7 @@ import {Page, NavController, Platform} from "ionic-angular";
 import {FbProvider} from "../../providers/fb-provider/fb-provider";
 import {InterestsPage} from "../../pages/interests/interests";
 import {DiscoverPage} from "../../pages/discover/discover";
-import {TabsPage} from "../../pages/tabs/tabs";
+import {BottomNavPage} from "../../pages/bottom-nav/bottom-nav";
 import {AllEventsPage} from "../all-events/all-events";
 
 @Page({
@@ -19,7 +19,7 @@ export class HelloIonicPage {
         }
         else
         {
-            this.nav.push(TabsPage);
+            this.nav.push(BottomNavPage);
         }
     }
 
