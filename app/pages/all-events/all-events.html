@@ -5,41 +5,23 @@
 
 <ion-content>
     <ion-list>
-        <ion-card *ngFor="#item of items" (click)="itemTapped($event, item)">
-            <img src="{{item.image}}"/>
+      <ion-item *ngFor="#event of events" (click)="itemTapped($event, event)">
+        <h3 align="center"><strong>{{event.eventName}}</strong></h3>
+        <ion-avatar item-left>
+            <img width="#%" height="25%" src="{{event.eventImage}}"/>
+        </ion-avatar>
+        <h3 align="center">{{event.eventVenueName}}</h3>
+        <h4 align="center">{{event.eventTime}} {{event.eventDate}}</h4>
+        <ion-icon item-right name="star" isActive="false"></ion-icon>
+      </ion-item>
+    </ion-list>
+
+            <!--<img src="{{event.eventImage}}"/>
             <ion-card-content>
                 <ion-card-title>
 
-                    {{item.eventName}}
-                    {{item.eventImage}}
-                    {{item.eventDescription}}
-                    {{item.venueName}}
-                    {{item.eventStart}}
-                    {{item.eventEnd}}
-
-
-                </ion-card-title>
-                <p>
-
-                </p>
-
-            </ion-card-content>
-
-        </ion-card>
-
-    <!--
-        <ion-item>
-            <ion-avatar item-left>
-              <img src="{{events.event[0].eventImage}}">
-            </ion-avatar>
-            <h2>{{events.eventName}}</h2>
-            <p>{{event.eventDescription}}</p>
-            <p>{{event.venueName}}</p>
-            <p>{{event.eventDateTimes.datetime.date}}</p>
-            <p>Start: {{event.eventDateTimes.datetime.time}} - End: {{event.eventDateTimes.datetime.end_time}}</p>
-        </ion-item>
-    -->
-    </ion-list>
+                 <p [innerHTML] ="event.eventName"></p>
+                </ion-card-title>-->
     <div *ngIf="selectedItem" padding>
         You navigated here from <b>{{selectedItem.title}}</b>
     </div>

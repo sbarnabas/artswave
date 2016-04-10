@@ -13,20 +13,20 @@ export class AllEventsPage {
         this.nav = nav;
 
         // If we navigated to this page, we will have an item available as a nav param
-        this.selectedItem = navParams.get('item');
-        this.items = [];
+        this.selectedEvent = navParams.get('event');
+        this.events = [];
         this.getData();
         if (this.data.events && this.data.events.event) {
             try {
                 for (var idx in this.data.events.event) {
                     var d = this.data.events.event[idx]
-                    this.items.push({
+                    console.log(this.data.events.event[idx].eventDatesTimes.datetime.date);
+                    this.events.push({
                         eventName: d.eventName ? d.eventName : "(Untitled)",
                         eventImage: d.eventImage ? d.eventImage : "",
-                        eventDescript:  d.eventDescription ? d.eventDescription : "None"
                         eventVenueName: d.venueName ? d.venueName : "",
-                        eventStart: d.eventDateBegin ? d.eventDateBegin : "",
-                        eventEnd: d.eventDateEnd ? d.eventDateEnd : ""
+                        eventDate: d.eventDatesTimes.datetime.date ? d.eventDatesTimes.datetime.date : "",
+                        eventTime: d.eventDatesTimes.datetime.time ? d.eventDatesTimes.datetime.time : ""
                     });
                 }
             } catch (ex) {
@@ -35,11 +35,11 @@ export class AllEventsPage {
         }
     }
 
-    /*itemTapped(event, item) {
+    itemTapped(event, item) {
         this.nav.push(ItemDetailsPage, {
-            item: item
+            event: event
         });
-    }*/
+    }
 
     getData() {
         this.data = {
