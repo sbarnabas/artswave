@@ -9,28 +9,14 @@
       {{selectedEvent.eventName}}
     </ion-card-header>-->
 
-    <img src="{{selectedEvent.eventImage}}" />
-    <ion-item>
-      <ion-icon name="share-alt" item-left large ></ion-icon>
-        <h2>Share this event!</h2>
-        <p>We award 100 points for each social media share</p>
-    </ion-item>
+    <img src="{{selectedEvent.eventImage}}" /><br />
 
-    <ion-item>
-      <p>Friends who saved this event...</p>
-      <ion-avatar>
-        <img src="{{event.eventImage}}"/>
-      </ion-avatar>
- 
-    </ion-item>
+    <ion-item-divider light>Event Details</ion-item-divider>
 
-  
     <p style="padding: 10px;">{{selectedEvent.eventDescript}}</p>
+    <p style="white-space:normal; padding-left: 10px">Venue: {{selectedEvent.eventVenueName}}</p>
+    <p style="white-space:normal; padding-left: 10px">{{selectedEvent.eventTime}} {{selectedEvent.eventDate}}</p><br />
 
-    <ion-item>
-      <h3 align="left" style="white-space:normal">Venue: {{selectedEvent.eventVenueName}}</h3>
-      <h4 align="left">{{selectedEvent.eventTime}} {{selectedEvent.eventDate}}</h4>
-    </ion-item>
     <ion-item>
       <button clear item-left onclick="local.href='{{selectedEvent.eventLink}}'">
         Event Link
@@ -39,6 +25,35 @@
         Buy Tickets
       </button>
     </ion-item>
+
+    <ion-item-divider light>Event Offers</ion-item-divider>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="../img/taste.jpg">
+      </ion-thumbnail>
+      <h2>Taste of Belgium</h2>
+      <p style="white-space:normal">Earn your free waffle by attending!</p>
+      <button primary outline item-right>Redeem</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="share-alt" item-left large ></ion-icon>
+        <h2>Share this event!</h2>
+        <p>We award 100 points for each social media share</p>
+    </ion-item>
+
+    <ion-item>
+      <p>Friends who also saved this event...</p>
+      <ion-row>
+          <ion-col width-10><ion-avatar style="padding-right: 5px;"><img src="../img/will-smith.PNG"></ion-avatar></ion-col>
+          <ion-col width-10><ion-avatar style="padding-right: 5px;"><img src="../img/kirby.PNG"></ion-avatar></ion-col>
+          <ion-col width-10><ion-avatar style="padding-right: 5px;"><img src="../img/jackson-g.PNG"></ion-avatar></ion-col>
+      </ion-row>
+    </ion-item>
+
+
+
 
 </ion-card>
 </ion-content>
