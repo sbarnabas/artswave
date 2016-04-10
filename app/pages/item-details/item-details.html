@@ -13,7 +13,7 @@
 
     <ion-item-divider light>Event Details</ion-item-divider>
 
-    <p style="padding: 10px;">{{selectedEvent.eventDescript}}</p>
+    <p [innerHTML]="selectedEvent.eventDescript" style="padding-left: 5px;"></p>
     <p style="white-space:normal; padding-left: 10px">Venue: {{selectedEvent.eventVenueName}}</p>
     <p style="white-space:normal; padding-left: 10px">{{selectedEvent.eventTime}} {{selectedEvent.eventDate}}</p><br />
 
@@ -30,7 +30,7 @@
 
     <ion-item>
       <ion-thumbnail item-left>
-        <img src="../img/taste.jpg">
+        <img src="img/taste.jpg">
       </ion-thumbnail>
       <h2>Taste of Belgium</h2>
       <p style="white-space:normal">Earn your free waffle by attending!</p>
@@ -46,9 +46,9 @@
     <ion-item>
       <p>Friends who also saved this event...</p>
       <ion-row>
-          <ion-col width-10><ion-avatar style="padding-right: 5px;"><img src="../img/will-smith.PNG"></ion-avatar></ion-col>
-          <ion-col width-10><ion-avatar style="padding-right: 5px;"><img src="../img/kirby.PNG"></ion-avatar></ion-col>
-          <ion-col width-10><ion-avatar style="padding-right: 5px;"><img src="../img/jackson-g.PNG"></ion-avatar></ion-col>
+          <ion-col width-10><ion-avatar style="padding-right: 5px;"><img src="img/will-smith.PNG"></ion-avatar></ion-col>
+          <ion-col width-10><ion-avatar style="padding-right: 5px;"><img src="img/kirby.PNG"></ion-avatar></ion-col>
+          <ion-col width-10><ion-avatar style="padding-right: 5px;"><img src="img/jackson-g.PNG"></ion-avatar></ion-col>
       </ion-row>
     </ion-item>
 
