@@ -23,7 +23,7 @@ export class AllEventsPage {
                     this.items.push({
                         eventName: d.eventName ? d.eventName : "(Untitled)",
                         eventImage: d.eventImage ? d.eventImage : "",
-                        eventDescript:  d.eventDescription ? d.eventDescription : "None"
+                        eventDescript:  d.eventDescription ? d.eventDescription : "None", 
                         eventVenueName: d.venueName ? d.venueName : "",
                         eventStart: d.eventDateBegin ? d.eventDateBegin : "",
                         eventEnd: d.eventDateEnd ? d.eventDateEnd : ""
