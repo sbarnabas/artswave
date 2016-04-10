@@ -2,7 +2,7 @@ import {Page, NavController, NavParams} from "ionic-angular";
 import {ItemDetailsPage} from "../item-details/item-details";
 
 @Page({
-    templateUrl: 'build/pages/discover/discover.html'
+    templateUrl: 'build/pages/my-events/my-events.html'
 })
 export class DiscoverPage {
     static get parameters() {

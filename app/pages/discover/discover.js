@@ -38,6 +38,9 @@ export class DiscoverPage {
         if (idx > -1) {
             this.items.splice(idx, 1);
         }
+        if(this.items.length ==0 ) {
+            
+        }
     }
 
     itemTapped(event, item) {
