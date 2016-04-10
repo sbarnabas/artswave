@@ -14,8 +14,6 @@
   <ion-card-content>
   	<p>{{userProfile.experienceCount}} recorded experiences
   	</p>
-
-
   	<p>Favorite Experience: {{userProfile.favoriteThing}}
   	</p>
   </ion-card-content>
@@ -23,49 +21,12 @@
 
 <ion-card>
   <ion-card-content>
-  	<p>
-  	  <a>
-      <ion-icon name="calendar" item-left></ion-icon>
-      My Events Archive
-      </a>
-    </p>
-
-  	<p>
-  	  <a>
-      <ion-icon name="done-all" item-left></ion-icon>
-      Interests
-      </a>
-    </p>
-
-  	<p>
-  	  <a>
-      <ion-icon name="card" item-left></ion-icon>
-      Donate
-      </a>
-    </p>
-
-  	<p>
-  	  <a>
-      <ion-icon name="log-out" item-left></ion-icon>
-      Sign Out
-      </a>
-    </p>
-
-  	<p>
-  	  <a (click)=goToAbout()>
-      <ion-icon name="bulb" item-left></ion-icon>
-      About Arts360
-      </a>
-    </p>
-    
-    <p>
-      <a>
-      <ion-icon name="help-circle" item-left></ion-icon>
-      Help / Contact Us
-      </a>
-    </p>
+  	<p><a><ion-icon name="calendar" item-left></ion-icon>Events Archive</a></p>
+  	<p><a><ion-icon name="done-all" item-left></ion-icon>Interests</a></p>
+  	<p><a><ion-icon name="card" item-left></ion-icon>Donate</a></p>
+  	<p><a><ion-icon name="log-out" item-left></ion-icon>Sign Out</a></p>
+  	<p><a (click)=goToAbout()><ion-icon name="bulb" item-left></ion-icon>About Arts360</a></p>
+    <p><a><ion-icon name="help-circle" item-left></ion-icon>Help / Contact Us</a></p>
   </ion-card-content>
-  
-
 </ion-card>
 </ion-content>
