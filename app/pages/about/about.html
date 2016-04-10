@@ -2,9 +2,12 @@
   <ion-title>About Arts360</ion-title>
 </ion-navbar>
 <ion-content>
-<ion-list>
+<ion-list no-lines>
   <ion-item *ngFor="#contributor of contributors">
-    <p>{{contributor.name}}</p>
+    <ion-avatar item-left>
+      <img src="img/{{contributor.avatarImage}}">
+    </ion-avatar>
+    <h2>{{contributor.name}}</h2>
   </ion-item>
 </ion-list>
 </ion-content>
