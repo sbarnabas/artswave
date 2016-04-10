@@ -14,17 +14,18 @@ export class AllEventsPage {
 
         // If we navigated to this page, we will have an item available as a nav param
         this.selectedEvent = navParams.get('event');
+        this.events=[]
         this.getData();
-        this.events=[];
-        this.favs=[];
+        var favs=[]
         this.local = new Storage(LocalStorage);
+
         if (this.data.events && this.data.events.event) {
             try {
                 for (var idx in this.data.events.event) {
                     var d = this.data.events.event[idx]
                     this.events.push({
                         id:             d.eventID,
-                        fav:            this.favs.indexOf(d.eventId) > -1,
+                        fav:            favs.indexOf(d.eventID) > -1||d.eventID=="6574",
                         eventName:      d.eventName ? d.eventName : "(Untitled)",
                         eventImage:     d.eventImage ? d.eventImage : "",
                         eventVenueName: d.venueName ? d.venueName : "",
@@ -1033,4 +1034,41 @@ export class AllEventsPage {
         };
     }
 
+    onPageDidEnter() {
+        console.log("here")
+
+        this.local.getItem('favs').then(function(result) {
+            var favs = result || [];
+            this.events = [];
+            console.log(favs);
+            if (this.data.events && this.data.events.event) {
+                try {
+                    for (var idx in this.data.events.event) {
+                        var d = this.data.events.event[idx]
+                        this.events.push({
+                            id:             d.eventID,
+                            fav:            favs.indexOf(d.eventId) > -1,
+                            eventName:      d.eventName ? d.eventName : "(Untitled)",
+                            eventImage:     d.eventImage ? d.eventImage : "",
+                            eventVenueName: d.venueName ? d.venueName : "",
+                            eventDate:      (Array.isArray(
+                                d.eventDatesTimes)) ? d.eventDatesTimes[0].date : d.eventDatesTimes.datetime.date ? d.eventDatesTimes.datetime.date : "",
+                            eventTime:      (Array.isArray(
+                                d.eventDatesTimes)) ? d.eventDatesTimes[0].time : d.eventDatesTimes.datetime.time ? d.eventDatesTimes.datetime.time : "",
+                            eventDescript:  d.eventDescription ? d.eventDescription : "",
+                            eventLink:      d.link ? d.link : "",
+                            eventType:      d.eventType ? d.eventType : "",
+                            eventPhone:     d.eventPhone1 ? d.eventPhone1 : "",
+                            eventEmail:     d.eventEmail ? d.eventEmail : "",
+                            eventTicketUrl: d.eventTicketUrl ? d.eventTicketUrl : ""
+                        });
+                    }
+                } catch (ex) {
+                    console.log(ex);
+                }
+
+            }
+        });
+
+    }
 }

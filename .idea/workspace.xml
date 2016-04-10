@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fc6dfa35-b9a9-41ec-a806-0c6197780ae3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/all-events/all-events.html" afterPath="$PROJECT_DIR$/app/pages/all-events/all-events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/about/about.js" afterPath="$PROJECT_DIR$/app/pages/about/about.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/all-events/all-events.js" afterPath="$PROJECT_DIR$/app/pages/all-events/all-events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/discover/discover.js" afterPath="$PROJECT_DIR$/app/pages/discover/discover.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.html" afterPath="$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.html" />
     </list>
     <ignored path="artswave.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,21 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="discover.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/discover/discover.html">
+      <file leaf-file-name="hello-ionic.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
-              <folding />
+            <state relative-caret-position="224">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#ion-content#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello-ionic.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.html">
+      <file leaf-file-name="item-details.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pages/item-details/item-details.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -58,28 +61,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all-events.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="all-events.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/pages/all-events/all-events.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            <state relative-caret-position="432">
+              <caret line="27" column="86" selection-start-line="27" selection-start-column="86" selection-end-line="27" selection-end-column="86" />
               <folding>
                 <element signature="e#0#90#0" expanded="true" />
-                <element signature="e#2383#75615#0" expanded="false" />
-                <element signature="e#13494#27590#0" expanded="false" />
-                <element signature="e#27592#34386#0" expanded="false" />
-                <element signature="e#34388#38699#0" expanded="false" />
-                <element signature="e#38701#42327#0" expanded="false" />
-                <element signature="e#42329#47067#0" expanded="false" />
-                <element signature="e#47069#51004#0" expanded="false" />
-                <element signature="e#51006#54254#0" expanded="false" />
-                <element signature="e#54256#60135#0" expanded="false" />
-                <element signature="e#60137#64171#0" expanded="false" />
-                <element signature="e#64173#68270#0" expanded="false" />
-                <element signature="e#68272#72038#0" expanded="false" />
-                <element signature="e#72040#75590#0" expanded="false" />
-                <marker date="1460310162000" expanded="true" signature="368:503" placeholder="{...}" />
+                <element signature="e#2395#75627#0" expanded="false" />
+                <element signature="e#13506#27602#0" expanded="false" />
+                <element signature="e#27604#34398#0" expanded="false" />
+                <element signature="e#34400#38711#0" expanded="false" />
+                <element signature="e#38713#42339#0" expanded="false" />
+                <element signature="e#42341#47079#0" expanded="false" />
+                <element signature="e#47081#51016#0" expanded="false" />
+                <element signature="e#51018#54266#0" expanded="false" />
+                <element signature="e#54268#60147#0" expanded="false" />
+                <element signature="e#60149#64183#0" expanded="false" />
+                <element signature="e#64185#68282#0" expanded="false" />
+                <element signature="e#68284#72050#0" expanded="false" />
+                <element signature="e#72052#75602#0" expanded="false" />
+                <marker date="1460313906000" expanded="true" signature="368:503" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pages/profile/profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pages/profile/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/pages/about/about.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="21" column="111" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,18 +122,8 @@
       <file leaf-file-name="all-events.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/pages/all-events/all-events.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="88" selection-start-line="11" selection-start-column="88" selection-end-line="11" selection-end-column="88" />
+            <state relative-caret-position="192">
+              <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -107,34 +132,14 @@
       <file leaf-file-name="discover.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/pages/discover/discover.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+            <state relative-caret-position="416">
+              <caret line="82" column="36" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="36" />
               <folding>
                 <element signature="e#0#82#0" expanded="true" />
                 <element signature="e#14593#30570#0" expanded="false" />
                 <element signature="e#30592#37469#0" expanded="false" />
                 <element signature="e#37491#41947#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tabs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/tabs/tabs.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tabs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pages/tabs/tabs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="23" column="5" selection-start-line="18" selection-start-column="3" selection-end-line="23" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -173,7 +178,6 @@
         <option value="$PROJECT_DIR$/app/pages/my-events/my-events.js" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/pages/bottom-nav/bottom-nav.html" />
-        <option value="$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.html" />
         <option value="$PROJECT_DIR$/app/pages/interests/interests.html" />
         <option value="$PROJECT_DIR$/app/pages/profile/profile.html" />
         <option value="$PROJECT_DIR$/app/pages/tabs/tabs.html" />
@@ -191,7 +195,9 @@
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/app/pages/all-events/all-events.html" />
         <option value="$PROJECT_DIR$/app/pages/discover/discover.js" />
+        <option value="$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.html" />
         <option value="$PROJECT_DIR$/app/pages/all-events/all-events.js" />
+        <option value="$PROJECT_DIR$/app/pages/about/about.js" />
       </list>
     </option>
   </component>
@@ -336,6 +342,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artswave" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artswave" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -359,6 +383,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artswave" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artswave" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -504,6 +550,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="about" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artswave" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artswave" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -627,12 +695,12 @@
       <workItem from="1460263621797" duration="2334000" />
       <workItem from="1460267592612" duration="2430000" />
       <workItem from="1460299069890" duration="5518000" />
-      <workItem from="1460309142837" duration="982000" />
+      <workItem from="1460309142837" duration="2226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28256000" />
+    <option name="totallyTimeSpent" value="29500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1599" height="1054" extended-state="0" />
@@ -696,15 +764,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ionic.config.js" />
-    <entry file="file://$PROJECT_DIR$/ionic.config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/auth/auth.ts" />
     <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-facebook4/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -821,21 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/item-details/item-details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/profile/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/theme/app.variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -942,27 +986,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/item-details/item-details.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/discover/discover.scss" />
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="11" column="88" selection-start-line="11" selection-start-column="88" selection-end-line="11" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -998,10 +1026,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/all-events/all-events.html">
+    <entry file="file://$PROJECT_DIR$/app/pages/item-details/item-details.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/item-details/item-details.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1016,10 +1052,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/item-details/item-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/hello-ionic/hello-ionic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/all-events/all-events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/discover/discover.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+        <state relative-caret-position="416">
+          <caret line="82" column="36" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="36" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
             <element signature="e#14593#30570#0" expanded="false" />
@@ -1031,25 +1094,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/all-events/all-events.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        <state relative-caret-position="432">
+          <caret line="27" column="86" selection-start-line="27" selection-start-column="86" selection-end-line="27" selection-end-column="86" />
           <folding>
             <element signature="e#0#90#0" expanded="true" />
-            <element signature="e#2383#75615#0" expanded="false" />
-            <element signature="e#13494#27590#0" expanded="false" />
-            <element signature="e#27592#34386#0" expanded="false" />
-            <element signature="e#34388#38699#0" expanded="false" />
-            <element signature="e#38701#42327#0" expanded="false" />
-            <element signature="e#42329#47067#0" expanded="false" />
-            <element signature="e#47069#51004#0" expanded="false" />
-            <element signature="e#51006#54254#0" expanded="false" />
-            <element signature="e#54256#60135#0" expanded="false" />
-            <element signature="e#60137#64171#0" expanded="false" />
-            <element signature="e#64173#68270#0" expanded="false" />
-            <element signature="e#68272#72038#0" expanded="false" />
-            <element signature="e#72040#75590#0" expanded="false" />
-            <marker date="1460310162000" expanded="true" signature="368:503" placeholder="{...}" />
+            <element signature="e#2395#75627#0" expanded="false" />
+            <element signature="e#13506#27602#0" expanded="false" />
+            <element signature="e#27604#34398#0" expanded="false" />
+            <element signature="e#34400#38711#0" expanded="false" />
+            <element signature="e#38713#42339#0" expanded="false" />
+            <element signature="e#42341#47079#0" expanded="false" />
+            <element signature="e#47081#51016#0" expanded="false" />
+            <element signature="e#51018#54266#0" expanded="false" />
+            <element signature="e#54268#60147#0" expanded="false" />
+            <element signature="e#60149#64183#0" expanded="false" />
+            <element signature="e#64185#68282#0" expanded="false" />
+            <element signature="e#68284#72050#0" expanded="false" />
+            <element signature="e#72052#75602#0" expanded="false" />
+            <marker date="1460313906000" expanded="true" signature="368:503" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/profile/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/profile/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/about/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="111" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
+          <folding />
         </state>
       </provider>
     </entry>
