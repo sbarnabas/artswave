@@ -15,6 +15,8 @@ import {FbProvider} from './providers/fb-provider/fb-provider';
     mode:'ios'
   } // http://ionicframework.com/docs/v2/api/config/Config/
 })
+
+
 class MyApp {
   static get parameters() {
     return [[IonicApp], [Platform],[FbProvider], [MenuController] ];
