@@ -1,6 +1,8 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
 import 'rxjs/add/operator/map';
 import {ProfilePage} from "../../pages/profile/profile";
+import {BottomNavPage} from "../../pages/bottom-nav/bottom-nav";
+
 
 
 @Page({
@@ -13,7 +15,7 @@ export class InterestsPage {
   
   saveInterests() {
 	  console.log("Saved your interests");
-	  this.nav.push(ProfilePage);
+	  this.nav.push(BottomNavPage);
   };
 
   constructor(nav, navParams) {

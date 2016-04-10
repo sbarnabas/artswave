@@ -7,35 +7,35 @@
     <ion-list>
 
         <ion-card *ngFor="#item of items">
-            <img src="{{item.image}}"/>
-            <ion-item>
-                <ion-card-content (click)="itemTapped($event, item)">
+            <img src="{{item.eventImage}}"  (click)="itemTapped($event, item)"/>
+            <ion-item (click)="itemTapped($event, item)">
+                <ion-card-content >
 
                     <ion-card-title>
 
-                        <p [innerHTML]="item.title"></p>
+                        <p [innerHTML]="item.eventName"></p>
                     </ion-card-title>
+                    <h3 align="center">{{item.eventVenueName}}</h3>
+                    <h4 align="center">{{item.eventTime}} {{item.eventDate}}</h4>
 
-                    <div [innerHTML]="item.note">
-                    </div>
 
 
                 </ion-card-content>
             </ion-item>
             <ion-row no-padding>
-                <ion-col>
+                <ion-col  (click)="itemRemove($event, item,false)">
                     <button clear small danger>
                         <ion-icon name='star'></ion-icon>
                         Save
                     </button>
                 </ion-col>
-                <ion-col text-center>
+                <ion-col text-center  (click)="itemTapped($event, item)">
                     <button clear small danger>
                         <ion-icon name='more'></ion-icon>
                         More Info
                     </button>
                 </ion-col>
-                <ion-col text-right (click)="itemRemove($event, item)">
+                <ion-col text-right (click)="itemRemove($event, item,true)">
                     <button clear small danger>
                         <ion-icon name='trash'></ion-icon>
                         Dismiss

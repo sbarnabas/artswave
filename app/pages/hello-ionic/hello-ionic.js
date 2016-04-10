@@ -15,11 +15,11 @@ export class HelloIonicPage {
         // causing the nav controller to animate the new page in
       //check interests
         if(false) {
-            this.nav.push(AllEventsPage);
+            this.nav.push(InterestsPage);
         }
         else
         {
-            this.nav.push(BottomNavPage);
+            this.nav.push(InterestsPage);
         }
     }
 
