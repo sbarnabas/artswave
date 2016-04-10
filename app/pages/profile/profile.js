@@ -18,6 +18,6 @@ export class ProfilePage {
     console.log("loading profile");
     this.nav = nav;
 
-    this.userProfile = {"userName": "Claude", "level" : "Legendary", "points": "20600", "interests": "Painting", "events" : "Tours!", "favoriteThing" : "Starry Night"};
+    this.userProfile = {"userName": "Claude", "level" : "Legendary", "points": "20600", "interests": "Painting", "events" : "Tours!", "favoriteThing" : "Starry Night", "experienceCount" : "8,675"};
   }
 }
