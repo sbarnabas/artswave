@@ -8,8 +8,8 @@
       <ion-item *ngFor="#event of events" (click)="itemTapped($event, event)">
         <h3 align="center"><strong>{{event.eventName}}</strong></h3>
         <ion-thumbnail item-left>
-            <img width="#%" height="25%" src="{{event.eventImage}}"/>
-        </ion-avatar>
+            <img height="25%" src="{{event.eventImage}}"/>
+        </ion-thumbnail>
         <h3 align="center">{{event.eventVenueName}}</h3>
         <h4 align="center">{{event.eventTime}} {{event.eventDate}}</h4>
         <ion-icon item-right name="star" isActive="false"></ion-icon>
