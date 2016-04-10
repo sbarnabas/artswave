@@ -20,13 +20,19 @@ export class AllEventsPage {
             try {
                 for (var idx in this.data.events.event) {
                     var d = this.data.events.event[idx]
-                    console.log(this.data.events.event[idx].eventDatesTimes.datetime.date);
                     this.events.push({
                         eventName: d.eventName ? d.eventName : "(Untitled)",
                         eventImage: d.eventImage ? d.eventImage : "",
-                        eventVenueName: d.venueName ? d.venueName : "",
-                        eventDate: d.eventDatesTimes.datetime.date ? d.eventDatesTimes.datetime.date : "",
-                        eventTime: d.eventDatesTimes.datetime.time ? d.eventDatesTimes.datetime.time : ""
+                        eventVenueName: d.venueName ? d.venueName : "(No Venue Specified)",
+                        eventDate: d.eventDatesTimes.datetime.date ? d.eventDatesTimes.datetime.date : "(No date specified)",
+                        eventTime: d.eventDatesTimes.datetime.time ? d.eventDatesTimes.datetime.time : "(No time specified)"
+                        /*eventDescript: d.eventDescription ? d.eventDescription: "",
+                        eventLink: d.link ? d.link: "",
+                        eventType: d.eventType ? d.eventType: "",
+                        eventPhone: d.eventPhone1 ? d.eventPhone1: "",
+                        eventEmail: d.eventEmail ? d.eventEmail: "",
+                        eventTicketInfo: d.eventTicketInfo ? d.eventTicketInfo: "",
+                        eventTicketUrl: d.eventTicketUrl ? d.eventTicketUrl: ""*/
                     });
                 }
             } catch (ex) {
@@ -35,11 +41,11 @@ export class AllEventsPage {
         }
     }
 
-    itemTapped(event, item) {
+    /*itemTapped(event, item) {
         this.nav.push(ItemDetailsPage, {
             event: event
         });
-    }
+    }*/
 
     getData() {
         this.data = {
