@@ -45,9 +45,9 @@ export class DiscoverPage {
         }
 
         this.nav.tabBadge=this.items.length;
+       
 
     }
-
     itemRemove(event, item,discard) {
         var idx = this.items.indexOf(item);
         if (idx > -1) {
