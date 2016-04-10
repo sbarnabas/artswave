@@ -1,5 +1,4 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
-import {Http} from 'angular2/http';
 import 'rxjs/add/operator/map';
 import {ProfilePage} from "../../pages/profile/profile";
 
@@ -9,7 +8,7 @@ import {ProfilePage} from "../../pages/profile/profile";
 })
 export class InterestsPage {
   static get parameters() {
-    return [[NavController], [NavParams], [Http]];
+    return [[NavController], [NavParams]];
   }
   
   saveInterests() {
@@ -17,14 +16,14 @@ export class InterestsPage {
 	  this.nav.push(ProfilePage);
   };
 
+  clickOrNah() {
+    
+  }
 
-  constructor(nav, navParams, http) {
+
+  constructor(nav, navParams) {
     this.nav = nav;
-    this.http = http;
 
-    console.log("getting the interests");
-    // this.http.get("http://localhost:3000/interests").map(res =>
-	// res.json()).subscribe(data => {console.log("got the interests ",data);});
     this.interests = [
                      {"name":"Painting", "imageUri":"https://artspass.theartswave.org/wp-content/themes/artspass/images/icons/color47/Arts_Center.png", "colorValue" : "F7941E"}, 
                      {"name":"Theatre", "imageUri":"https://artspass.theartswave.org/wp-content/themes/artspass/images/icons/color48/Theatre.png", "colorValue" : "6CB33F"}, 

@@ -5,7 +5,12 @@
 <ion-content>
   
 <ion-row>
-  <ion-col width-33 style="color: #{{interests[0].colorValue}}" align="center"><img src="{{interests[0].imageUri}}"/><ion-label>{{interests[0].name}} <ion-checkbox></ion-checkbox></ion-label></ion-col>
+  <ion-col width-33 style="color: #{{interests[0].colorValue}}" align="center">
+    <img (click)="checkOrNah()" src="{{interests[0].imageUri}}"/>
+    <ion-label>{{interests[0].name}}
+      <ion-checkbox></ion-checkbox>
+    </ion-label>
+  </ion-col>
   <ion-col width-33 style="color: #{{interests[1].colorValue}}" align="center"><img src="{{interests[1].imageUri}}"/><ion-label>{{interests[1].name}} <ion-checkbox></ion-checkbox></ion-label></ion-col>
   <ion-col width-33 style="color: #{{interests[2].colorValue}}" align="center"><img src="{{interests[2].imageUri}}"/><ion-label>{{interests[2].name}} <ion-checkbox></ion-checkbox></ion-label></ion-col>
 </ion-row>
