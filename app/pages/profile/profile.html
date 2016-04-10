@@ -1,36 +1,7 @@
 <ion-navbar *navbar>
   <ion-title>Profile</ion-title>
 </ion-navbar>
-
 <ion-content>
-<!-- ion-card>
-  <ion-card-header>
-    {{userProfile.userName}}'s Profile
-  </ion-card-header>
-
-  <ion-list>
-    <button ion-item>
-      <ion-icon name="bowtie" item-left></ion-icon>
-      Level: {{userProfile.level}}
-    </button>
-
-    <button ion-item>
-      <ion-icon name="calendar" item-left></ion-icon>
-      My Events
-    </button>
-
-    <button ion-item>
-      <ion-icon name="done-all" item-left></ion-icon>
-      Interests
-    </button>
-
-    <button ion-item>
-      <ion-icon name="help-circle" item-left></ion-icon>
-      Help / Contact Us
-    </button>
-
-  </ion-list>
-</ion-card -->
 <ion-card>
 
   <ion-item>
@@ -42,37 +13,47 @@
   </ion-item>
 
   <ion-card-content>
+
   	<p>
-     <ion-icon name="calendar"></ion-icon>
+  	  <a>
+      <ion-icon name="calendar" item-left></ion-icon>
       My Events Archive
+      </a>
     </p>
 
   	<p>
+  	  <a>
       <ion-icon name="done-all" item-left></ion-icon>
       Interests
+      </a>
     </p>
 
   	<p>
+  	  <a>
       <ion-icon name="card" item-left></ion-icon>
       Donate
+      </a>
     </p>
 
   	<p>
+  	  <a>
       <ion-icon name="log-out" item-left></ion-icon>
       Sign Out
+      </a>
     </p>
 
   	<p>
+  	  <a (click)=goToAbout()>
       <ion-icon name="bulb" item-left></ion-icon>
       About Arts360
+      </a>
     </p>
     
     <p>
+      <a>
       <ion-icon name="help-circle" item-left></ion-icon>
       Help / Contact Us
-    </p>
-    
-    <p>
+      </a>
     </p>
   </ion-card-content>
   

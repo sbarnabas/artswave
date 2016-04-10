@@ -1,0 +1,10 @@
+<ion-navbar *navbar>
+  <ion-title>About Arts360</ion-title>
+</ion-navbar>
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="#contributor of contributors">
+    <p>{{contributor.name}}</p>
+  </ion-item>
+</ion-list>
+</ion-content>

@@ -1,4 +1,5 @@
 import {Modal, Page, NavController, NavParams} from 'ionic-angular';
+import {AboutPage} from "../../pages/about/about";
 
 @Page({
   templateUrl: 'build/pages/profile/profile.html'
@@ -7,6 +8,10 @@ import {Modal, Page, NavController, NavParams} from 'ionic-angular';
 export class ProfilePage {
   static get parameters() {
     return [[NavController], [NavParams]];
+  }
+  
+  goToAbout() {
+	  this.nav.push(AboutPage);
   }
 
   constructor(nav, navParams) {
