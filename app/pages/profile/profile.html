@@ -6,14 +6,24 @@
 
   <ion-item>
     <ion-avatar item-left>
-      <img src="img/avatar.png">
+      <img src="img/claude.png">
     </ion-avatar>
     <h2>{{userProfile.userName}}</h2>
     <p>{{userProfile.level}}</p>
   </ion-item>
 
   <ion-card-content>
+  	<p>{{userProfile.points}} Points
+  	</p>
 
+
+  	<p>Favorite Experience: {{userProfile.favoriteThing}}
+  	</p>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content>
   	<p>
   	  <a>
       <ion-icon name="calendar" item-left></ion-icon>
