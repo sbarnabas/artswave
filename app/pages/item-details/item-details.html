@@ -1,15 +1,44 @@
 <ion-navbar *navbar>
-  <ion-title>Item Details</ion-title>
+  <ion-title>Event Details</ion-title>
 </ion-navbar>
 
 <ion-content>
 
   <ion-card>
-  <ion-card-header>
-    <strong>{{selectedEvent.eventName}}</strong>
-  </ion-card-header>
-  <ion-card-content>
-    <p> test </p>
-  </ion-card-content>
+    <!--<ion-card-header>
+      {{selectedEvent.eventName}}
+    </ion-card-header>-->
+
+    <img src="{{selectedEvent.eventImage}}" />
+    <ion-item>
+      <ion-icon name="share-alt" item-left large ></ion-icon>
+        <h2>Share this event!</h2>
+        <p>We award 100 points for each social media share</p>
+    </ion-item>
+
+    <ion-item>
+      <p>Friends who saved this event...</p>
+      <ion-avatar>
+        <img src="{{event.eventImage}}"/>
+      </ion-avatar>
+ 
+    </ion-item>
+
+  
+    <p style="padding: 10px;">{{selectedEvent.eventDescript}}</p>
+
+    <ion-item>
+      <h3 align="left" style="white-space:normal">Venue: {{selectedEvent.eventVenueName}}</h3>
+      <h4 align="left">{{selectedEvent.eventTime}} {{selectedEvent.eventDate}}</h4>
+    </ion-item>
+    <ion-item>
+      <button clear item-left onclick="local.href='{{selectedEvent.eventLink}}'">
+        Event Link
+      </button>
+      <button clear item-right onclick="local.href='{{selectedEvent.eventTicketLink}}'">
+        Buy Tickets
+      </button>
+    </ion-item>
+
 </ion-card>
 </ion-content>

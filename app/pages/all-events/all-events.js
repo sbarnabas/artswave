@@ -31,7 +31,6 @@ export class AllEventsPage {
                         eventType: d.eventType ? d.eventType: "",
                         eventPhone: d.eventPhone1 ? d.eventPhone1: "",
                         eventEmail: d.eventEmail ? d.eventEmail: "",
-                        eventTicketInfo: d.eventTicketInfo ? d.eventTicketInfo: "",
                         eventTicketUrl: d.eventTicketUrl ? d.eventTicketUrl: ""
                     });
                 }
