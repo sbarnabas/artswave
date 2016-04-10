@@ -6,12 +6,12 @@
 <ion-content>
     <ion-list>
 
-        <ion-card *ngFor="#item of items">
+        <ion-card *ngFor="#item of items" >
             <img src="{{item.image}}"/>
-            <ion-card-content  (click)="itemTapped($event, item)">
+            <ion-card-content (click)="itemTapped($event, item)">
                 <ion-card-title>
 
-                 <p [innerHTML] ="item.title"></p>
+                    <p [innerHTML]="item.title"></p>
                 </ion-card-title>
 
                 <div [innerHTML]="item.note">
@@ -32,9 +32,9 @@
                         More Info
                     </button>
                 </ion-col>
-                <ion-col text-right  (click)="itemRemove($event, item)">
+                <ion-col text-right (click)="itemRemove($event, item)">
                     <button clear small danger>
-                        <ion-icon name='share-alt'></ion-icon>
+                        <ion-icon name='trash'></ion-icon>
                         Dismiss
                     </button>
                 </ion-col>
