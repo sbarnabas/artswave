@@ -1,4 +1,4 @@
-import {Page, NavController, NavParams} from "ionic-angular";
+import {Page,Storage,LocalStorage, NavController, NavParams} from "ionic-angular";
 import {ItemDetailsPage} from "../item-details/item-details";
 
 @Page({
@@ -18,12 +18,15 @@ export class DiscoverPage {
         this.selectedItem = navParams.get('item');
         this.items = [];
         this.getData();
-
+        this.local=new Storage(LocalStorage);
+        this.favs = [];
+        this.local.set('favs',this.favs);
         if (this.data.events && this.data.events.event) {
             try {
                 for (var idx in this.data.events.event) {
                     var d = this.data.events.event[idx]
                     this.items.push({
+                        id:             d.eventID,
                         eventName:      d.eventName ? d.eventName : "(Untitled)",
                         eventImage:     d.eventImage ? d.eventImage : "",
                         eventVenueName: d.venueName ? d.venueName : "",
@@ -45,7 +48,7 @@ export class DiscoverPage {
         }
 
         this.nav.tabBadge=this.items.length;
-       
+
 
     }
     itemRemove(event, item,discard) {
@@ -57,6 +60,12 @@ export class DiscoverPage {
         if (this.items.length == 0) {
             this.nav.tabBadge=0;
             this.nav.tabBadgeStyle="";
+        }
+        if(!discard){
+            console.log("Saved",item.id);
+            this.favs.push(item.id);
+            this.local.set('favs',JSON.stringify(this.favs));
+
         }
     }
 

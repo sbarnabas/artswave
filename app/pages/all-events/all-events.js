@@ -1,4 +1,4 @@
-import {Page, NavController, NavParams, http} from "ionic-angular";
+import {Page, Storage, LocalStorage, NavController, NavParams, http} from "ionic-angular";
 import {ItemDetailsPage} from "../item-details/item-details";
 
 @Page({
@@ -14,18 +14,24 @@ export class AllEventsPage {
 
         // If we navigated to this page, we will have an item available as a nav param
         this.selectedEvent = navParams.get('event');
-        this.events = [];
         this.getData();
+        this.events=[];
+        this.favs=[];
+        this.local = new Storage(LocalStorage);
         if (this.data.events && this.data.events.event) {
             try {
                 for (var idx in this.data.events.event) {
                     var d = this.data.events.event[idx]
                     this.events.push({
+                        id:             d.eventID,
+                        fav:            this.favs.indexOf(d.eventId) > -1,
                         eventName:      d.eventName ? d.eventName : "(Untitled)",
                         eventImage:     d.eventImage ? d.eventImage : "",
                         eventVenueName: d.venueName ? d.venueName : "",
-                        eventDate:      (Array.isArray(d.eventDatesTimes))? d.eventDatesTimes[0].date :d.eventDatesTimes.datetime.date ? d.eventDatesTimes.datetime.date : "",
-                        eventTime:      (Array.isArray(d.eventDatesTimes))? d.eventDatesTimes[0].time :d.eventDatesTimes.datetime.time ? d.eventDatesTimes.datetime.time : "",
+                        eventDate:      (Array.isArray(
+                            d.eventDatesTimes)) ? d.eventDatesTimes[0].date : d.eventDatesTimes.datetime.date ? d.eventDatesTimes.datetime.date : "",
+                        eventTime:      (Array.isArray(
+                            d.eventDatesTimes)) ? d.eventDatesTimes[0].time : d.eventDatesTimes.datetime.time ? d.eventDatesTimes.datetime.time : "",
                         eventDescript:  d.eventDescription ? d.eventDescription : "",
                         eventLink:      d.link ? d.link : "",
                         eventType:      d.eventType ? d.eventType : "",
@@ -38,6 +44,7 @@ export class AllEventsPage {
                 console.log(ex);
             }
         }
+
     }
 
     itemTapped(event, item) {
@@ -1025,4 +1032,5 @@ export class AllEventsPage {
             }
         };
     }
+
 }
