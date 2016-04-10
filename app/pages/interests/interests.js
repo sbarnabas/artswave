@@ -16,11 +16,6 @@ export class InterestsPage {
 	  this.nav.push(ProfilePage);
   };
 
-  clickOrNah() {
-    
-  }
-
-
   constructor(nav, navParams) {
     this.nav = nav;
 
